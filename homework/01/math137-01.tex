@@ -1,0 +1,160 @@
+\documentclass{../homework}
+
+\title{Homework 1}
+\date{2019 September 11 (Wednesday)}
+\author{}
+
+\begin{document}
+
+\begin{problems}
+\item Let \((X, d)\) be a metric space and let \(A, B\) be two
+  nonempty subsets of \(X\).  Prove that if
+  \(A \cap B \ne \emptyset\), then the following inequality holds for
+  the diameters \(\delta\):
+  \[
+    \delta(A \cup B) \le \delta(A) + \delta(B).
+  \]
+
+  Prove also that the diameter of \(A\) is equal to the diameter of
+  the closure, i.e., \(\delta(A) = \delta(\overline A)\).
+
+  Recall that \(\delta(A) = \sup\{d(x, y) : x, y \in A\}\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(0<a<b\) and
+  \[
+    f(x) =
+    \begin{cases}
+      1 & \text{if \(x \in [a, b] \cap \QQ\)} \\
+      0 & \text{if \(x \in [a, b]\) is irrational}.
+    \end{cases}
+  \]
+  Find the upper and lower Riemann integrals of \(f(x)\) over
+  \([a, b]\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Consider the function
+  \[
+    f(x) =
+    \begin{cases}
+      1 & 0 \le x \le 1, \\
+      0 & 1 < x \le 2.
+    \end{cases}
+  \]
+  \begin{problems}
+  \item What is \(F(x) = \int_0^x f(t) \dif t\) on \([0, 2]\)?
+
+    \begin{solution}
+    \end{solution}
+
+  \item Is \(F(x)\) continuous?
+
+    \begin{solution}
+    \end{solution}
+
+  \item Is \(F'(x) = f(x)\)?
+
+    \begin{solution}
+    \end{solution}
+  \end{problems}
+
+\item Give examples to illustrate that
+  \begin{problems}
+  \item the pointwise limit of continuous (respectively,
+    differentiable) functions is not necessarily continuous
+    (respectively, differentiable).
+
+    \begin{solution}
+    \end{solution}
+
+  \item the pointwise limit of integrable functions is not necessarily
+    integrable.
+
+    \begin{solution}
+    \end{solution}
+  \end{problems}
+
+\item Give examples to illustrate that
+  \begin{problems}
+  \item there exist differentiable functions \(f_n\) and \(f\) such
+    that \(f_n \to f\) pointwise on \([0, 1]\) but
+    \[
+      \lim_{n\to\infty} f_n'(x) \ne \Prn{\lim_{n\to\infty} f_n(x)}'
+      \quad \text{when \(x=1\)},
+    \]
+
+    \begin{solution}
+    \end{solution}
+
+  \item there exist continuous functions \(f_n\) and \(f\) such that
+    \(f_n \to f\) pointwise on \([0, 1]\) but
+    \[
+      \lim_{n\to\infty} \int_0^1 f_n(x) \dif x
+      \ne \int_0^1 \Prn{\lim_{n\to\infty} f_n(x)} \dif x.
+    \]
+
+    \begin{solution}
+    \end{solution}
+  \end{problems}
+
+\item Show that there exists a continuous function defined on \(\RR\)
+  that is nowhere differentiable by proving the following:
+  \begin{problems}
+  \item Let \(g(x) = \abs x\) if \(x \in [-1, 1]\).  Extend \(g\) to
+    be periodic.  Sketch \(g\) and the first few terms of the sum
+    \[
+      f(x) = \sum_{n=1}^\infty \Prn{\frac 3 4}^n g(4^n x).
+    \]
+
+    \begin{solution}
+    \end{solution}
+
+  \item Use the Weierstrass \(M\)-test to show that \(f\) is
+    continuous.
+
+    \begin{solution}
+    \end{solution}
+
+  \item Prove that \(f\) is not differentiable at any point.
+
+    \begin{solution}
+    \end{solution}
+  \end{problems}
+
+\item
+  \begin{problems}
+  \item Show that the Cantor set \(C\) can also be described as of all
+    those real numbers in \([0, 1]\) which have ternary expansions
+    \[
+      C = \Cbr{
+        x : x = \sum_{n=1}^\infty \frac{a_n}{3^n}
+        \quad a_n = 0, 2
+      }
+    \]
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that the length of \(C\) is equal to zero.
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that Cantor set \(C\) can be put into one-to-one
+    correspondence with the interval \([0, 1]\) and that cardinality
+    of \(C\) is continuum.
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that Cantor set is totally disconnected and perfect.
+
+    \begin{solution}
+    \end{solution}
+  \end{problems}
+\end{problems}
+\end{document}
