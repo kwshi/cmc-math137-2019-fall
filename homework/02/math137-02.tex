@@ -1,0 +1,165 @@
+\documentclass{../homework}
+
+\title{Homework 2}
+\author{}
+\date{2019 September 23}
+
+\begin{document}
+\begin{problems}
+\item Given a subset \(E\) of \(\RR\), define exterior measure of
+  \(E\) by
+  \[
+    m_*(E) = \inf\set*{
+      \sum_{n=1}^\infty l(I_n)
+      : E = \bigcup_{n=1}^\infty I_n
+    }
+  \]
+  where by \(l(I_n)\) we mean the length of \(I_n\) and the infimum is
+  taken over all coverings of \(E\) by countable bounded intervals.
+  Prove the following:
+  \begin{problems}
+  \item \(0 \le m_*(E) \le \infty\).
+  \item If \(E \subset F\) then \(m_*(E) \subset m_*(F)\).
+  \item \(m_*(E+x) = m_*(E)\) where \(E+x = \set{e+x : e \in E}\).
+  \item \(m_*(E) = 0\) for any countable set \(E\).
+  \item \(m_*(E) < \infty\) for any bounded set \(E\).
+  \item
+    \(m_*(E) = \inf\set*{\sum_{n=1}^\infty (b_n-a_n) : E =
+      \bigcup_{n=1}^\infty (a_n, b_n)}\).
+  \end{problems}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \item
+    \item
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\item True-False: Let \(E = \QQ \cap [0, 1]\) and \(\set{I_n}\) be a
+  \textbf{finite} collection of open intervals covering \(E\).  Then
+  we have \(\sum_{n=1}^\infty \abs{I_n} \ge 1\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Stein and Shakarchi: page 39 numbers: 5, 6, 7, 8
+
+  \begin{book}
+    \begin{enumerate}[start=5]
+    \item Suppose \(E\) is a given set, and \(\mathcal O_n\) is the
+      open set:
+      \[
+        \mathcal O_n = \set*{x : d(x, E) < \frac 1 n}.
+      \]
+      Show:
+      \begin{problems}
+      \item If \(E\) is compact, then
+        \(m(E) = \lim_{n\to\infty} m(\mathcal O_n)\).
+        \label{itm:3.5.a}
+      \item However, the conclusion in \ref{itm:3.5.a} may be false
+        for \(E\) closed and unbounded; or \(E\) open and bounded.
+      \end{problems}
+    \end{enumerate}
+  \end{book}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+  \begin{book}
+    \begin{enumerate}[start=6]
+    \item Using translations and dilations, prove the following: Let
+      \(B\) be a ball in \(\RR^d\) of radius \(r\).  Then
+      \(m(B) = v_d r^d\), where \(v_d = m(B_1)\), and \(B_1\) is the
+      unit ball, \(B_1 = \set{x \in \RR^d : \abs x < 1}\).
+
+      A calculation of the constant \(v_d\) is postponed until
+      Exercise 14 in the next chapter.
+    \end{enumerate}
+  \end{book}
+
+  \begin{solution}
+  \end{solution}
+
+  \begin{book}
+    \begin{enumerate}[start=7]
+    \item If \(\delta = (\delta_1, \dots, \delta_d)\) is a \(d\)-tuple
+      of positve numbers \(\delta_i > 0\), and \(E\) is a subset of
+      \(\RR^d\), we define \(\delta E\) by
+      \[
+        \delta E = \set{
+          (\delta_1 x_1, \dots, \delta_d x_d)
+          : \text{where \(x_1, \dots, x_d \in E\)}
+        }.
+      \]
+    \end{enumerate}
+  \end{book}
+
+  \begin{solution}
+  \end{solution}
+
+  \begin{book}
+    \begin{enumerate}[start=8]
+    \item Suppose \(L\) is a linear transformation of \(\RR^d\).  Show
+      that if \(E\) is a measurable subset of \(\RR^d\), then so is
+      \(L(E)\), by proceeding as follows:
+      \begin{problems}
+      \item Note that if \(E\) is compact, so is \(L(E)\).  Hence if
+        \(E\) is an \(F_\sigma\) set, so is \(L(E)\).
+      \item Because \(L\) automatically satisfies the inequality
+        \[
+          \abs{L(x) - L(x')} \le M \abs{x - x'}
+        \]
+        for some \(M\), we can see that \(L\) maps any cube of side
+        length \(l\) into a cube of side length \(c_d M l\), with
+        \(c_d = 2 \sqrt d\).  Now if \(m(E) = 0\), there is a
+        collection of cubes \(\set{Q_j}\) such that
+        \(E \subset \bigcup_j Q_j\), and \(\sum_j m(Q_j) < \epsilon\).
+        Thus \(m_*(L(E)) \le c' \epsilon\), and hence \(m(L(E)) = 0\).
+        Finally, use Corollary 3.5.
+
+        One can show that \(m(L(E)) = \abs{\det L} m(E)\); see Problem
+        4 in the next chapter.
+      \end{problems}
+    \end{enumerate}
+  \end{book}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\item Prove the \textbf{Borel--Cantelli lemma}.
+
+  See Stein and Shakarchi text: page 42 number: 16.
+
+  \begin{book}
+    \textbf{The Borel--Cantelli lemma}.  Suppose
+    \(\set{E_k}_{k=1}^\infty\) is a countable family of measurable
+    subsets of \(\RR^d\) and that
+    \[
+      \sum_{k=1}^\infty m(E_k) < \infty.
+    \]
+  \end{book}
+
+  Remark: In probability theory the Borel--Cantelli lemma is stated as
+  follows: Given \(\set{E_n}\) sequence of events in some probability
+  space, if the sum of the probabilities of \(E_n\) is finite, i.e.,
+  if \(\sum_{n=1}^\infty m(E_n) < \infty\) then the probability that
+  infinitely many of them occur is
+  \(0\), i.e., \(m(\limsup E_n) = 0\).
+
+  \begin{solution}
+  \end{solution}
+
+\end{problems}
+\end{document}
