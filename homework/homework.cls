@@ -39,6 +39,7 @@
 \RequirePackage{mathtools}
 
 \RequirePackage{isomath}
+\RequirePackage{centernot}
 
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
@@ -57,6 +58,16 @@
   linecolor=gray,
 }
 \newmdenv[style=solution]{solution}
+
+\mdfdefinestyle{quote}{
+  skipabove=.5em,
+  skipbelow=.5em,
+  linecolor=gray,
+  hidealllines=true,
+  leftline=true,
+  linewidth=.25em,
+}
+\newmdenv[style=quote]{quota}
 
 \RequirePackage{enumitem}
 \newlist{problems}{enumerate}{3}
