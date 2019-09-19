@@ -53,21 +53,31 @@
 \RequirePackage{mdframed}
 
 \mdfdefinestyle{solution}{
-  skipabove=.5em,
-  skipbelow=.5em,
+  skipabove=\parskip,
   linecolor=gray,
+  innerleftmargin=.5em,
 }
 \newmdenv[style=solution]{solution}
 
+\mdfdefinestyle{book}{
+  skipabove=\parskip,
+  linecolor=gray,
+  hidealllines=true,
+  leftline=true,
+  linewidth=.25em,
+  innerleftmargin=.5em,
+  backgroundcolor=lightgray!25,
+}
+\newmdenv[style=book]{book}
+
 \mdfdefinestyle{quote}{
-  skipabove=.5em,
-  skipbelow=.5em,
+  skipabove=\parskip,
   linecolor=gray,
   hidealllines=true,
   leftline=true,
   linewidth=.25em,
 }
-\newmdenv[style=quote]{quota}
+\renewmdenv[style=quote]{quote}
 
 \RequirePackage{enumitem}
 \newlist{problems}{enumerate}{3}
@@ -90,17 +100,11 @@
 \newcommand{\drv}[3][]{\frac{\dif^{#1} #2}{\dif #3^{#1}}}
 \newcommand{\pdrv}[3][]{\frac{\pdif^{#1} #2}{\pdif #3^{#1}}}
 
-\newcommand{\cbr}[1]{\{#1\}}
-\newcommand{\Cbr}[1]{\left\{#1\right\}}
-\newcommand{\sbr}[1]{[#1]}
-\newcommand{\Sbr}[1]{\left[#1\right]}
-\newcommand{\abr}[1]{\langle#1\rangle}
-\newcommand{\Abr}[1]{\left\langle#1\right\rangle}
-\newcommand{\abs}[1]{\lvert#1\rvert}
-\newcommand{\Abs}[1]{\left\lvert#1\right\rvert}
-\newcommand{\prn}[1]{(#1)}
-\newcommand{\Prn}[1]{\left(#1\right)}
-\newcommand{\floor}[1]{\lfloor#1\rfloor}
-\newcommand{\Floor}[1]{\left\lfloor#1\right\rfloor}
-\newcommand{\ceil}[1]{\lceil#1\rceil}
-\newcommand{\Ceil}[1]{\left\lceil#1\right\rceil}
+\DeclarePairedDelimiter{\cbr}{\{}{\}}
+\DeclarePairedDelimiter{\set}{\{}{\}}
+\DeclarePairedDelimiter{\sbr}{[}{]}
+\DeclarePairedDelimiter{\abr}{\langle}{\rangle}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\prn}{(}{)}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
