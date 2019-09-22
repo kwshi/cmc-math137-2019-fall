@@ -91,13 +91,19 @@
   \begin{book}
     \begin{enumerate}[start=7]
     \item If \(\delta = (\delta_1, \dots, \delta_d)\) is a \(d\)-tuple
-      of positve numbers \(\delta_i > 0\), and \(E\) is a subset of
+      of positive numbers \(\delta_i > 0\), and \(E\) is a subset of
       \(\RR^d\), we define \(\delta E\) by
       \[
         \delta E = \set{
           (\delta_1 x_1, \dots, \delta_d x_d)
           : \text{where \(x_1, \dots, x_d \in E\)}
         }.
+      \]
+
+      Prove that \(\delta E\) is measurable whenever \(E\) is
+      measurable, and
+      \[
+        m(\delta E) = \delta_1 \dots \delta_d m(E).
       \]
     \end{enumerate}
   \end{book}
@@ -149,6 +155,18 @@
     \[
       \sum_{k=1}^\infty m(E_k) < \infty.
     \]
+    Let
+    \begin{align*}
+      E &= \set{
+          x \in \RR^d
+          : \text{\(x \in E_k\), for infinitely many \(k\)}
+          } \\
+        &= \limsup_{k\to\infty} E_k.
+    \end{align*}
+    \begin{problems}
+    \item Show that \(E\) is measurable.
+    \item Prove \(m(E) = 0\).
+    \end{problems}
   \end{book}
 
   Remark: In probability theory the Borel--Cantelli lemma is stated as
@@ -159,6 +177,10 @@
   \(0\), i.e., \(m(\limsup E_n) = 0\).
 
   \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \end{problems}
   \end{solution}
 
 \end{problems}
