@@ -37,6 +37,8 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{mathtools}
+%\RequirePackage{mathrsfs}
+%\RequirePackage{wasysym}
 
 \RequirePackage{isomath}
 \RequirePackage{centernot}
