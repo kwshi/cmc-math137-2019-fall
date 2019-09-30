@@ -1,0 +1,139 @@
+\documentclass{../homework}
+
+\title{Homework 3}
+\author{}
+\date{2019 October 14}
+
+\begin{document}
+\begin{problems}
+\item Show that the set of irrational numbers is not a countable union
+  of closed subsets of \(\RR\).
+
+  Hint: Use Baire's theorem.
+  \begin{quote}
+    Theorem (Baire): If \((X, d)\) is a complete metric space and
+    \(X = \bigcup_{n=1}^\infty A_n\), then
+    \(\prn*{\overline{A_n}}^\circ \ne \emptyset\) for some \(n\).
+    (Ref: A Problem Book in Real Analysis -- Aksoy, Khamsi -- Page
+    204)
+  \end{quote}
+
+  \begin{solution}
+  \end{solution}
+
+\item
+  \begin{problems}
+  \item Show that a set is \(F_\sigma\) if and only if its complement
+    is a \(G_\delta\).
+  \item Consider a real-valued function \(f \colon X \to \RR\).  The
+    \textbf{oscillation} \(\omega_f(x)\) of \(f\) at the point \(x\)
+    is the non-negative extended real number defined by
+    \[
+      \omega_f(x) = \inf_{V \in \mathfrak R_x}
+      \set*{\sup_{z, y \in V} \abs{f(x) - f(y)}}
+    \]
+    where \(\mathfrak R_x\) denotes the collection of all
+    neighborhoods of the point \(x\).  Show that \(f\) is continuous
+    at \(x\) if and only if \(\omega_f(x) = 0\).
+
+  \item Let \(D\) denote the set of all discontinuities of \(f\),
+    i.e., \(D = \bigcup_{n=1}^\infty D_n\) where
+    \(D_n = \set*{x \in X : \omega_f(x) \ge \frac 1 n}\).  Show that
+    the set \(D\) of all points of discontinuity of \(f\) is an
+    \(F_\sigma\)-set.  In particular, the set of points of continuity
+    of \(f\) is a \(G_\delta\)-set.
+  \end{problems}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\item Let \(\phi\) be continuous on \(\RR\) and let \(f\) be finite
+  a.e. in \(E \subset \RR^d\), so that in particular \(\phi \circ f\)
+  defined a.e. in \(E\).
+  \begin{problems}
+  \item Show that \(\phi(f)\) is measurable if \(f\) is.
+  \item Show that \(\abs f\), \(\abs f^p\) (\(p > 0\)), \(e^{cf}\) are
+    measurable if \(f\) is.
+  \item Give an example of a function \(f\) which is not measurable
+    but \(\abs f\) is measurable.
+  \end{problems}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\item Let \(A\) be a dense subset of \(\RR\).  Show that \(f\) is
+  measurable if \(\set{x : f(x) > a}\) is a measurable set for all
+  \(a \in A\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(f \colon [0, 1] \to [0, 1]\) be the Cantor function and
+  let \(g(x) = f(x) + x\).  Show that
+  \begin{problems}
+  \item \(g\) is a bijection from \([0, 1]\) to \([0, 2]\) and that
+    \(h = g^{-1}\) continuous from \([0, 2]\) to \([0, 1]\).
+  \item \(m(g(C)) = 1\) where \(C\) is the Cantor set.
+  \item Use Problem 5 in Homework 2 to deduce that \(g(C)\) contains a
+    nonmeasurable set \(A\).  Let \(B = g^{-1}(A)\).  Show that \(B\)
+    is measurable (or Lebesgue measurable) but not Borel.
+  \item Show that there exists a Lebesgue measurable function \(F\)
+    and a continuous function \(G\) on \(\RR\) such that \(F \circ G\)
+    is not Lebesgue measurable.
+  \end{problems}
+  \textbf{Note}: Let
+  \(C = \set*{x : x = \sum_{j=1}^\infty \frac{a_j}{3^j} \quad
+    \text{\(a_j = 0, 2\) for all \(j\)}}\).  Let
+  \(f(x) = \sum_{j=1}^\infty \frac{b_j}{2^j}\) where
+  \(b_j = \frac{a_j}{2}\).  The series defining \(f(x)\) is the base 2
+  expansion of a number in \([0, 1]\), and any number in \([0, 1]\)
+  can be obtained in this way.  Hence \(f\) maps \(C\) onto
+  \([0, 1]\).  Note that if \(x, y \in C\) and \(x < y\) then
+  \(f(x) < f(y)\) unless \(x\) and \(y\) are the end points of one of
+  the intervals removed from \([0, 1]\) to obtain \(C\).  In this case
+  \(f(x) = \frac{p}{2^k}\) for some integers \(p, k\), and \(f(x)\)
+  and \(f(y)\) are two base-2 expansions of this number.  Extend \(f\)
+  from \([0, 1]\) to itself by declaring it to be constant on each
+  interval missing from \(C\).  This extended \(f\) is still
+  increasing, and since its range is all of \([0, 1]\) it cannot have
+  any jump discontinuities; hence it is continuous.  \(f\) is called
+  the \textbf{Cantor function} or the Cantor--Lebesgue function.
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\item Show that
+  \begin{problems}
+  \item The sum and product of two simple functions are simple.
+  \item \(\chi_{A \cap B} = \chi_A \cdot \chi_B\)
+  \item \(\chi_{A \cup B} = \chi_A + \chi_B - \chi_{A \cap B}\)
+  \item \(\chi_{A^c} = 1 - \chi_A\).
+  \end{problems}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\end{problems}
+\end{document}
