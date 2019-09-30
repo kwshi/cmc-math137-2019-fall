@@ -57,7 +57,6 @@
 \mdfdefinestyle{solution}{
   skipabove=\parskip,
   linecolor=gray,
-  innerleftmargin=.5em,
 }
 \newmdenv[style=solution]{solution}
 
@@ -67,7 +66,6 @@
   hidealllines=true,
   leftline=true,
   linewidth=.25em,
-  innerleftmargin=.5em,
   backgroundcolor=lightgray!25,
 }
 \newmdenv[style=book]{book}
