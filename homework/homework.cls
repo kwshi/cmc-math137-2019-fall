@@ -94,6 +94,7 @@
 \newcommand{\FF}{\mathbb F}
 \newcommand{\CC}{\mathbb C}
 \newcommand{\TT}{\mathbb T}
+\newcommand{\ZZ}{\mathbb Z}
 
 \newcommand{\dif}{\mathop{}\!\mathrm d}
 \newcommand{\pdif}{\!\mathop{\partial}}
