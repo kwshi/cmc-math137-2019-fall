@@ -1,0 +1,123 @@
+\documentclass{../homework}
+
+\title{Homework 4}
+\author{}
+\date{2019 November 6}
+
+\begin{document}
+\begin{problems}
+\item Prove Tchebychev's inequality.  Suppose \(f \ge 0\), and \(f\)
+  is integrable.  If \(\alpha > 0\) and
+  \(E_\alpha = \set{x : f(x) > \alpha}\), prove that
+  \[
+    m(E_\alpha) \le \frac 1 \alpha \int f.
+  \]
+
+  \begin{solution}
+  \end{solution}
+
+\item
+  \begin{problems}
+  \item Give an example of a function \(f \colon \RR \to \RR\) which
+    is integrable, but \(f^2\) is not.
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that a measurable function \(f\) is integrable if and
+    only if \(\abs f\) is integrable.  Give an example of a
+    nonintegrable function whose absolute value is integrable.
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item Suppose \(f\) is Riemann integrable on the closed interval
+  \([a, b]\).  Then show that \(f\) is measurable and
+  \[
+    (R) \int_{[a, b]} f = (L) \int_{[a, b]} f
+  \]
+  where the integral on the left-hand side is the Riemann integral,
+  and that on the right-hand side is the Lebesgue integral.
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(\mu\) be the counting measure on \(\NN\).  Interpret
+  Fatou's lemma and the monotone and dominated convergence theorems
+  about infinite series.
+
+  \begin{solution}
+  \end{solution}
+
+\item If \(f_n, g_n, f, g\) are all integrable functions (all in
+  \(L^1\)) with \(f_n \to f\) and \(g_n \to g\) a.e.,
+  \(\abs{f_n} \le g_n\), and \(\int g_n \to \int g\), then show that
+  \(\int f_n \to \int f\).
+
+  Hint: Rework the proof of the dominated convergence theorem.
+
+  \begin{solution}
+  \end{solution}
+
+\item Suppose \(f_n, f \in L^1\) and \(f_n \to f\) a.e.  Then show
+  that \(\int \abs{f_n - f} \to 0\) iff
+  \(\int \abs{f_n} \to \int \abs f\).
+
+  Hint: Use Problem 5 above.
+
+  \begin{solution}
+  \end{solution}
+
+\item Suppose \(f \ge 0\), let
+  \[
+    \mu(E) = \int_E f \dif m
+  \]
+  for a measurable set \(E\).
+  \begin{problems}
+  \item Show that \(\mu\) is a measure.
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that for any \(g \ge 0\)
+    \[
+      \int g \dif \mu = \int f g \dif m.
+    \]
+
+    Hint: First suppose \(g\) is simple.
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item Show that \(f(x) = \frac{\ln x}{x^2}\) is Lebesgue integrable
+  over \([1, \infty)\) and that \(\int f \dif x = 1\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Show that the improper Riemann integral
+  \[
+    \int_0^\infty \cos(x^2) \dif x
+  \]
+  exists but is not Lebesgue integrable over \([0, \infty)\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Establish the Riemann--Lebesgue Theorem: If \(f\) is an
+  integrable function on \((-\infty, \infty)\) then
+  \[
+    \lim_{n\to\infty} \int_{-\infty}^\infty f(x) \cos(nx) \dif x = 0.
+  \]
+  Hint: Theorem is easy if \(f\) is a simple function; then use
+  Theorem 2.4 (Stein, page 71).
+
+  \begin{solution}
+  \end{solution}
+
+\end{problems}
+\end{document}
