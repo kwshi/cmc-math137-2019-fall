@@ -70,14 +70,14 @@
 }
 \newmdenv[style=book]{book}
 
-\mdfdefinestyle{quote}{
+\mdfdefinestyle{aside}{
   skipabove=\parskip,
   linecolor=gray,
   hidealllines=true,
   leftline=true,
   linewidth=.25em,
 }
-\renewmdenv[style=quote]{quote}
+\renewmdenv[style=aside]{aside}
 
 \RequirePackage{enumitem}
 \newlist{problems}{enumerate}{3}
@@ -100,6 +100,8 @@
 \newcommand{\pdif}{\!\mathop{\partial}}
 \newcommand{\drv}[3][]{\frac{\dif^{#1} #2}{\dif #3^{#1}}}
 \newcommand{\pdrv}[3][]{\frac{\pdif^{#1} #2}{\pdif #3^{#1}}}
+
+\DeclareMathOperator{\diam}{diam}
 
 \DeclarePairedDelimiter{\cbr}{\{}{\}}
 \DeclarePairedDelimiter{\set}{\{}{\}}
