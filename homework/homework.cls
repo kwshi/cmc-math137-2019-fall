@@ -35,13 +35,17 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \RequirePackage{amsmath}
+\RequirePackage{amsthm}
 \RequirePackage{amssymb}
 \RequirePackage{mathtools}
+\RequirePackage{thmtools}
 %\RequirePackage{mathrsfs}
-%\RequirePackage{wasysym}
+\RequirePackage{wasysym}
+\RequirePackage{textcomp}
 
 \RequirePackage{isomath}
 \RequirePackage{centernot}
+\RequirePackage{cancel}
 
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
