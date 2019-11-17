@@ -1,0 +1,144 @@
+\documentclass{../homework}
+
+\title{Homework 5}
+\author{}
+\date{2019 November 18}
+
+\begin{document}
+\begin{problems}
+\item Let \(T\) be an arbitrary metric space and
+  \(f \colon \RR \times T \to \RR\) a function.  Assume that
+  \(f(\cdot, t)\) is a measurable function for each \(t \in T\) and
+  \(f(x, \cdot)\) is a continuous function for each \(x \in \RR\).
+  Assume also that there exists an integrable function \(g\) such that
+  for each \(t \in T\) we have \(\abs{f(x, t)} \le g(x)\) for almost
+  all \(x \in \RR\).  Show thatthe function \(F \colon T \to \RR\)
+  defined by
+  \[
+    F(t) = \int_\RR f(x, t) \dif x
+  \]
+  is a continuous function.
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(f\) be integrable over \((-\infty, \infty)\).
+  \begin{problems}
+  \item Show that
+    \[
+      \int f(x) \dif x = \int f(x+t) \dif x
+    \]
+
+    \begin{solution}
+    \end{solution}
+
+  \item Let \(g\) be a bounded measurable function.  Then show that
+    \[
+      \lim_{t\to0} \int_{-\infty}^\infty
+      \abs*{g(x) \sbr*{f(x)-f(x+t)}} \dif x = 0.
+    \]
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item
+  \begin{problems}
+  \item Let \(\set{f_n}\) be a sequence of real valued measurable
+    functions.  If \(\abs{f_n}\) converges to \(f\) in measure, show
+    that \(\abs{f_n}\) is a Cauchy sequence in measure.
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that if a sequence \(\set{f_n}\) of integrable functions
+    converge to \(f\) in \(L^1\), then \(\set{f_n}\) converges to
+    \(f\) in measure.  Is the converse true?
+
+    Note: We say \(\set{f_n}\) is \emph{Cauchy in measure} if for
+    every \(\epsilon > 0\),
+    \[
+      m\prn*{\set*{x : \abs*{f_n(x)-f_m(x)} > \epsilon}} \to 0
+      \quad \text{as \(m, n \to \infty\)},
+    \]
+    and we say \(\set{f_n}\) \emph{converges in measure} to a
+    measurable function \(f\) if for every \(\epsilon > 0\)
+    \[
+      m\prn*{\set*{x : \abs*{f_n(x)-f(x)} > \epsilon}} \to 0
+      \quad \text{as \(n \to \infty\)}.
+    \]
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item Compute the following limits and justify the calculations:
+  \begin{problems}
+  \item
+    \(\displaystyle\lim_{n\to\infty} \int_0^\infty \sbr*{1+\frac x
+      n}^{-n} \sin\frac x n \dif x\)
+
+    \begin{solution}
+    \end{solution}
+
+  \item
+    \(\displaystyle\lim_{n\to\infty} \int_0^\infty n \sin\frac x n
+    \sbr*{x \prn*{1+x^2}}^{-1} \dif x\)
+
+    \begin{solution}
+    \end{solution}
+
+  \item
+    \(\displaystyle\lim_{n\to\infty} \int_a^\infty n \prn*{1+n^2
+      x^2}^{-1} \dif x\)
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item Show that
+  \(\int_0^\infty x^{2n} e^{-x^2} \dif x = \frac{(2n)!}{2^{2n} n!}
+  \cdot \frac{\sqrt \pi}{2}\) for \(n = 0, 1, 2, \dots\).
+
+  Hint: Use induction on \(n\) and the fact that
+  \(\int_0^\infty e^{-x^2} \dif x = \frac{\sqrt \pi}{2}\) (Euler's
+  formula).
+
+  \begin{solution}
+  \end{solution}
+
+\item Show that for \(a > 0\),
+  \(\int_{-\infty}^\infty e^{-x^2} \cos(ax) \dif x = \sqrt \pi
+  e^{-\frac{a^2}{4}}\).
+
+  Hint: Use problem 5 above.
+
+  \begin{solution}
+  \end{solution}
+
+\item Suppose that \(f\) is a real, continuously differentiable
+  function on \([a, b]\), that \(f(a) = f(b) = 0\), and that
+  \(\int_a^b f^2(x) \dif x = 1\).  Prove that:
+  \begin{problems}
+  \item \(\displaystyle\int_a^b x f(x) f'(x) \dif x = -\frac 1 2\)
+
+    \begin{solution}
+    \end{solution}
+
+  \item
+    \(\displaystyle\int_a^b \sbr*{f'(x)}^2 \int_a^b x^2 f^2(x) \dif x
+    \ge \frac 1 4\)
+
+    Hint: recall that \(\abr{f, g} = \int_a^b f(x) g(x) \dif x\)
+    defines an inner product on \(C[a, b]\).
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\end{problems}
+\end{document}
