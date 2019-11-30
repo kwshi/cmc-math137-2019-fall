@@ -111,7 +111,9 @@
 \DeclarePairedDelimiter{\set}{\{}{\}}
 \DeclarePairedDelimiter{\sbr}{[}{]}
 \DeclarePairedDelimiter{\abr}{\langle}{\rangle}
+\DeclarePairedDelimiter{\inner}{\langle}{\rangle}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \DeclarePairedDelimiter{\prn}{(}{)}
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
