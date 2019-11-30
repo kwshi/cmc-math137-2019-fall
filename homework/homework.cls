@@ -41,6 +41,7 @@
 \RequirePackage{thmtools}
 %\RequirePackage{mathrsfs}
 \RequirePackage{wasysym}
+\RequirePackage{esint}
 \RequirePackage{textcomp}
 
 \RequirePackage{isomath}

@@ -1,0 +1,129 @@
+\documentclass{../homework}
+
+\title{Homework 6}
+\author{}
+\date{}
+
+\begin{document}
+\begin{problems}
+\item
+  \begin{problems}
+  \item Evaluate \(\iint xy e^{-\prn*{x^2+y^2}} \dif x \dif y\) for
+    \(x \ge 0\) and \(0 \le y \le 1\).
+
+    \begin{solution}
+    \end{solution}
+
+  \item Show that
+    \(\int_0^\infty \frac{e^{-x} - e^{-2x}}{x} \dif x = \log 2\).
+    Hint: integrate \(e^{-xy}\) and use Fubini's Theorem.
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item Show that for each measurable set \(E\) in \(\RR\) the set
+  \[
+    \sigma(E) = \set*{(x, y) : x-y \in E}
+  \]
+  is a measurable subset of \(\RR^2\).
+
+  Hint: consider the cases when \(E\) is open, \(E\) is \(G_\delta\),
+  \(E\) has measure zero, and \(E\) is measurable.
+
+  \begin{solution}
+  \end{solution}
+
+\item Consider the set of positive integers with the counting measure.
+  State Fubini's and Tonelli's theorems for this case.
+
+  \begin{solution}
+  \end{solution}
+
+\item Suppose that \(f \colon \RR^2 \to \RR\) is defined by
+  \[
+    f(x, y) =
+    \begin{cases}
+      1 & \text{if \(x \ge 0\) and \(x \le y < x+1\)}, \\
+      -1 & \text{if \(x \ge 0\) and \(x + 1 \le y < x+2\)}, \\
+      0 & \text{otherwise}.
+    \end{cases}
+  \]
+  Show that the iterated integrals are not equal.  Why does this not
+  contradict Fubini's theorem?
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(f, g, h \in L^2(\RR)\) and \(\alpha, \beta \in \RR\), and
+  \[
+    (f*g)(x) = \int_\RR f(x-y) g(y) \dif y.
+  \]
+  Show that
+  \begin{problems}
+  \item \((\alpha f + \beta g)*h = \alpha(f*h) + \beta(g*h)\).
+
+    \begin{solution}
+    \end{solution}
+
+  \item \(f*g=g*f\).
+
+    \begin{solution}
+    \end{solution}
+
+  \item \((f*g)*h = f*(g*h)\).
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\item Let \(c \in (0, \infty)\) and \(c = m\prn*{B(0, 1)}\), where by
+  \(B(x, r)\) we mean the open ball centered at \(x\) with radius
+  \(r\), and \(S(x, r)\) is the sphere.  Prove that for any
+  \(x \in \RR^n\) and any \(r \in (0, \infty)\), we have
+  \begin{problems}
+  \item \(m\prn*{B(x, r)} = r^n c\)
+
+    \begin{solution}
+    \end{solution}
+
+  \item \(m\prn*{\overline{B(x, r)}} = r^n c\)
+
+    \begin{solution}
+    \end{solution}
+
+  \item \(m(S(x, r)) = 0\)
+
+    \begin{solution}
+    \end{solution}
+
+  \item For fixed \(x_0 \in \RR^n\) and \(r_0 \in (0, \infty)\), we
+    have:
+    \[
+      \lim_{x \to x_0} \chi_{B(x, r_0)}(y) = \chi_{B(x_0, r_0)}(y)
+    \]
+    for \(y \notin S(x_0, r_0)\).  Thus
+    \(\lim_{x \to x_0} \chi_{B(x, r_0)} = \chi_{B(x_0, r_0)}\) a.e. in
+    \(\RR^n\).
+
+    \begin{solution}
+    \end{solution}
+
+  \item For fixed \(r_0 \in (0, \infty)\) and \(x_0 \in \RR^n\), we
+    have:
+    \[
+      \lim_{r \to r_0} \chi_{B(x_0, r)}(y) = \chi_{B(x_0, r_0)}(y)
+    \]
+    for \(y \notin S(x_0, r_0)\).  Thus
+    \(\lim_{r \to r_0} \chi_{B(x_0, r)} = \chi_{B(x_0, r_0)}\) a.e. in
+    \(\RR^n\).
+
+    \begin{solution}
+    \end{solution}
+
+  \end{problems}
+
+\end{problems}
+\end{document}
