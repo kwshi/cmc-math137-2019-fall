@@ -1,0 +1,92 @@
+\documentclass{../homework}
+
+\title{Homework 7}
+\author{}
+\date{}
+
+\begin{document}
+\begin{problems}
+\item Let \(F\) be a closed subset in \(\RR\), the distance from \(x\)
+  to \(F\), \(d(x, F)\) is defined as
+  \[
+    f(x) = d(x, F) = \inf\set*{\abs{x-y} : y \in Y}.
+  \]
+  Prove that \(\frac{f(x+y)}{\abs y} \to 0\) for a.e. \(x \in F\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Suppose \(F\) is of bounded variation and continuous.  Prove
+  that \(F = F_1 - F_2\), where both \(F_1\) and \(F_2\) are monotonic
+  and continuous.
+
+  \begin{solution}
+  \end{solution}
+
+\item The one-sided Hardy--Littlewood maximal function \(f_+^*\) is
+  defined as
+  \[
+    f_+^*(x) = \sup_{h>0} \frac 1 h \int_x^{x+h} \abs{f(y)} \dif y.
+  \]
+  Show that
+  \(m\prn*{E_\alpha^+} = \frac 1 \alpha \int_{E_\alpha^+} \abs{f(y)}
+  \dif y\), where \(E_\alpha^+ = \set*{x \in R : f_+^*(x) > \alpha}\).
+
+  Hint: Consider \(F(x) = \int_0^x \abs*{f(y)} \dif y - \alpha x\) and
+  apply the rising sun lemma (lemma 3.5) to this function to see that
+  \(E_\alpha^+ = \bigcup_{j=1}^\infty \prn*{a_j, b_j}\) and
+  \(F\prn*{a_j} = F\prn*{b_j}\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Show that if \(f \colon \RR \to \RR\) is absolutely continuous,
+  then
+  \begin{problems}
+  \item \(f\) maps sets of measure zero to sets of measure zero.
+  \item \(f\) maps measurable sets to measurable sets.
+  \end{problems}
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(f \colon \RR \to \RR\).  Prove that \(f\) satisfies the
+  Lipschitz condition
+  \[
+    \abs*{f(x) - f(y)} \le M \abs{x-y}
+  \]
+  for some \(M\) and all \(x, y \in \RR\), if and only if \(f\)
+  satisfies the following properties:
+  \begin{enumerate}[label=(\alph*)]
+  \item \(f\) is absolutely continuous.
+  \item \(\abs*{f'(x)} \le M\) for a.e. \(x\).
+  \end{enumerate}
+
+  \begin{solution}
+  \end{solution}
+
+\item If \(a, b > 0\), let \(f(x) = x^a \sin\prn*{x^{-b}}\) for
+  \(0 < x \le 1\) and \(f(0) = 0\).  Prove that \(f\) is of bounded
+  variation in \([0, 1]\) if and only if \(a > b\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Show that the set of discontinuities of a monotone function is
+  at most countable.
+
+  \begin{solution}
+  \end{solution}
+
+\item Let \(f \colon [a, b] \to \RR\) be a differentiable function.
+  If the derivative \(f'\) is uniformly bounded on \([a, b]\), then
+  show that \(f'\) is Lebesgue integrable and that
+  \[
+    \int_{[a, b]} f'(x) \dif x = f(b) - f(a).
+  \]
+
+  \begin{solution}
+  \end{solution}
+
+\end{problems}
+\end{document}
