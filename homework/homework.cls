@@ -55,6 +55,9 @@
 \usetikzlibrary{calc}
 \usetikzlibrary{positioning}
 
+\pgfplotsset{compat=1.16}
+\usepgfplotslibrary{patchplots}
+
 \RequirePackage{parskip}
 
 \RequirePackage{mdframed}
@@ -84,7 +87,7 @@
 }
 \renewmdenv[style=aside]{aside}
 
-\RequirePackage{enumitem}
+\RequirePackage[inline]{enumitem}
 \newlist{problems}{enumerate}{3}
 \setlist[problems, 1]{
   label=\arabic*.,
@@ -102,7 +105,7 @@
 \newcommand{\ZZ}{\mathbb Z}
 
 \newcommand{\dif}{\mathop{}\!\mathrm d}
-\newcommand{\pdif}{\!\mathop{\partial}}
+\newcommand{\pdif}{\mathop{}\!\partial}
 \newcommand{\drv}[3][]{\frac{\dif^{#1} #2}{\dif #3^{#1}}}
 \newcommand{\pdrv}[3][]{\frac{\pdif^{#1} #2}{\pdif #3^{#1}}}
 
